@@ -1,0 +1,22 @@
+/include/ "system-conf.dtsi"
+/ {
+};
+
+&sdhci1 {
+	status = "okay";
+	xlnx,has-cd = <0x1>;
+	xlnx,has-power = <0x0>;
+	xlnx,has-wp = <0x1>;
+	disable-wp;
+	no-1-8-v;
+};
+
+&usb0 {
+	status = "okay";
+};
+
+&dwc3_0 {
+	status = "okay";
+	dr_mode = "peripheral";
+};
+
