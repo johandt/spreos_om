@@ -1034,15 +1034,15 @@ CONFIG_pciutils=y
 #
 # python 
 #
-# CONFIG_python is not set
+CONFIG_python=y
 # CONFIG_python-terminal is not set
 # CONFIG_python-mailbox is not set
 # CONFIG_python-logging is not set
 # CONFIG_python-xml is not set
 # CONFIG_python-hotshot is not set
-# CONFIG_python-multiprocessing is not set
-# CONFIG_python-threading is not set
-# CONFIG_python-curses is not set
+CONFIG_python-multiprocessing=y
+CONFIG_python-threading=y
+CONFIG_python-curses=y
 # CONFIG_python-mime is not set
 # CONFIG_python-netclient is not set
 # CONFIG_python-netserver is not set
@@ -1594,9 +1594,13 @@ CONFIG_run-postinsts=y
 #
 # libmali-xlnx 
 #
-# CONFIG_libmali-xlnx is not set
+CONFIG_libmali-xlnx=y
 # CONFIG_libmali-xlnx-dbg is not set
-# CONFIG_libmali-xlnx-dev is not set
+CONFIG_libmali-xlnx-dev=y
+# CONFIG_mali-backend-fbdev is not set
+# CONFIG_mali-backend-headless is not set
+# CONFIG_mali-backend-wayland is not set
+CONFIG_mali-backend-x11=y
 
 #
 # libmetal 
@@ -1739,7 +1743,7 @@ CONFIG_run-postinsts=y
 #
 # libusb1 
 #
-# CONFIG_libusb1 is not set
+CONFIG_libusb1=y
 # CONFIG_libusb1-dev is not set
 # CONFIG_libusb1-dbg is not set
 
@@ -4118,7 +4122,7 @@ CONFIG_u-boot-tools=y
 #
 # packagegroup-petalinux-self-hosted 
 #
-# CONFIG_packagegroup-petalinux-self-hosted is not set
+CONFIG_packagegroup-petalinux-self-hosted=y
 # CONFIG_packagegroup-petalinux-self-hosted-dbg is not set
 # CONFIG_packagegroup-petalinux-self-hosted-dev is not set
 
@@ -4146,8 +4150,8 @@ CONFIG_u-boot-tools=y
 #
 # packagegroup-petalinux-x11 
 #
-# CONFIG_packagegroup-petalinux-x11 is not set
-# CONFIG_packagegroup-petalinux-x11-dev is not set
+CONFIG_packagegroup-petalinux-x11=y
+CONFIG_packagegroup-petalinux-x11-dev=y
 # CONFIG_packagegroup-petalinux-x11-dbg is not set
 
 #
@@ -4179,6 +4183,7 @@ CONFIG_auto-login=y
 CONFIG_htop=y
 CONFIG_iperf3=y
 CONFIG_nano=y
+CONFIG_tree=y
 
 #
 # PetaLinux RootFS Settings

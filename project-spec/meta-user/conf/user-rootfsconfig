@@ -7,4 +7,5 @@ CONFIG_nano
 CONFIG_mc
 CONFIG_htop
 CONFIG_iperf3
+CONFIG_tree
 
