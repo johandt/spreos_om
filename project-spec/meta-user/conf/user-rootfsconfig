@@ -8,4 +8,8 @@ CONFIG_mc
 CONFIG_htop
 CONFIG_iperf3
 CONFIG_tree
+CONFIG_cmake
+CONFIG_devmem2
 
+
+CONFIG_fwver

@@ -1,5 +1,13 @@
 /include/ "system-conf.dtsi"
 / {
+	chosen {
+		bootargs = "earlycon console=ttyPS0,115200 clk_ignore_unused root=/dev/mmcblk1p2 rw rootwait uio_pdrv_genirq.of_id=generic-uio";
+	};
+	pl_int@0000 {
+		compatible = "generic-uio";
+		interrupt-parent = <0x4>;
+		interrupts = <0x0 0x59 0x4>;
+	};
 };
 
 &sdhci1 {
@@ -19,4 +27,5 @@
 	status = "okay";
 	dr_mode = "peripheral";
 };
+
 

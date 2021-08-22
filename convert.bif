@@ -1,0 +1,5 @@
+all:
+{
+	./spreos_om_top.bit
+}
+

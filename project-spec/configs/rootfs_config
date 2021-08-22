@@ -1744,7 +1744,7 @@ CONFIG_mali-backend-x11=y
 # libusb1 
 #
 CONFIG_libusb1=y
-# CONFIG_libusb1-dev is not set
+CONFIG_libusb1-dev=y
 # CONFIG_libusb1-dbg is not set
 
 #
@@ -4150,8 +4150,8 @@ CONFIG_packagegroup-petalinux-self-hosted=y
 #
 # packagegroup-petalinux-x11 
 #
-CONFIG_packagegroup-petalinux-x11=y
-CONFIG_packagegroup-petalinux-x11-dev=y
+# CONFIG_packagegroup-petalinux-x11 is not set
+# CONFIG_packagegroup-petalinux-x11-dev is not set
 # CONFIG_packagegroup-petalinux-x11-dbg is not set
 
 #
@@ -4174,12 +4174,15 @@ CONFIG_auto-login=y
 #
 # apps 
 #
+CONFIG_fwver=y
 # CONFIG_gpio-demo is not set
 # CONFIG_peekpoke is not set
 
 #
 # user packages 
 #
+CONFIG_cmake=y
+CONFIG_devmem2=y
 CONFIG_htop=y
 CONFIG_iperf3=y
 CONFIG_nano=y
